@@ -18,9 +18,16 @@ function putToken() {
 
 
     // Marcar casilla
-    
+    if(board[fil][col] === '*') {
+        board[fil][col] = player;
 
-    board[fil][col] = player;
+    }else {
+        console.log('Aquí no puedes maharon');
+    }
+
+    console.log(board);
+
+
 
     // Cambiar de jugador
     if(activePlayer === 0) {
